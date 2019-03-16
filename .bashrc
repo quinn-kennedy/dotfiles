@@ -115,3 +115,34 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+. /usr/share/autojump/autojump.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+#testing 
+#DEFAULT_TERM_BG="#333333"
+#VIM_TERM_BG="#121212"
+
+#term_scheme() {
+ #local COLOR="$1"
+
+ #if [ "$TERM" == "screen-256color" ]; then
+## TMUX
+  #echo -ne "\\ePtmux;\\e\\033]11;$COLOR\\007\\e\\\\"
+ #else
+##  NOT TMUX
+  #echo -ne "\\033]11;$COLOR\\007"
+ #fi
+#}
+
+#v() {
+ #term_scheme $VIM_TERM_BG
+
+ #nvim "$@"
+
+ #term_scheme $DEFAULT_TERM_BG
+#}
+
