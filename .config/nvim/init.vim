@@ -203,6 +203,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
+Plug 'justinmk/vim-sneak'
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 
@@ -210,7 +212,7 @@ let g:ale_fixers = {
   \ 'javascript': ['eslint']
   \ }
 
-nmap <leader>d <Plug>(ale_fix)
+" nmap <leader>d <Plug>(ale_fix)
 let g:deoplete#enable_at_startup = 1
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
